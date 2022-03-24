@@ -5,7 +5,7 @@ const Header = () => {
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img
-          src='public/logo192.png'
+          src='maveric-logo-updated.png'
           width="243"
           height="52"
           class="d-inline-block align-top" alt
