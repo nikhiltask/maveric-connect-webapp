@@ -52,7 +52,7 @@ const PostPage = () => {
         </div>
         <div class="col">
           <img class="mr-1" ssrc="Like.jpg" width="64" height="64" alt="" />
-          Like
+          2 Like
           <img class="mr-1" src="comment.png" width="64" height="64" alt="" />
           Comment
         </div>
@@ -76,17 +76,17 @@ const PostPage = () => {
             vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
         </div>
-        {/* <div class="col">
+        <div class="col">
           <img class="mr-1" ssrc="Like.jpg" width="64" height="64" alt="" />
           Like
           <img class="mr-1" src="comment.png" width="64" height="64" alt="" />
           Comment
-        </div> */}
-        <div class="row">
-          <div class="col-8 col-sm-6">Commenter Name</div>
+        </div>
+        {/* <div class="row">
+          <div class="col-8 col-sm-6">Comment </div>
 
           <div class="col-4 col-sm-6">5 Likes</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
