@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Endpoints from "../api/EndPoints";
+import { Link } from "react-router-dom";
 
 
 const LoginPage = () => {
@@ -90,7 +91,10 @@ const LoginPage = () => {
             />
             <br />
             <p>
-              <a href="#">New to Maveric Book ? Signup</a>
+            {/* <Link className="nav-link" to="/login"/> */}
+              <a href="#">
+                New to Maveric Book ? Signup
+                </a>
               
               <a href="#">    Forgot password?</a>
             </p>
