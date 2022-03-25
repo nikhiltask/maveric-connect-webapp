@@ -1,24 +1,25 @@
 import React from "react";
-// import image from"""
+import "../Footer/style.css";
+import logo from "../Footer/maveric-logo-white.png";
+
 const Footer = () => {
   return (
-    <div className="main-footer">
-      <div className="Container">
-        <div className="row">
-        <hr/>
-        <div className="card-footer bg-transparent border-success">
-        <img
-          src='maveric-logo-white.png'
-          width="243"
-          height="52"
-          class="d-inline-block align-top" alt
-        />
-        <p className="col-sm">
-        &copy;Copyright, Maveric System Ltd  {new Date().getFullYear()}</p>
-        </div>
+    <footer className="footer">
+      <div className="mt-2">
+        <div className="ml-2">
+          <img src={logo} />
+          <ul class="nav justify-content-center">
+            <li className="nav-item">
+              <a className="nav-link disabled" href="#">
+                <h6 className="text-center" style={{ color: "black" }}>
+                  @Copyright, Maveric Systems Ltd 2022
+                </h6>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
