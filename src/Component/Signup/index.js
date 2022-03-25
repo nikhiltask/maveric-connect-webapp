@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Endpoints from "../../../api/EndPoints";
+import Endpoints from "../api/EndPoints";
 
 const SignupPage = () => {
   const [responseMessage, setResponseMessaage] = useState({
