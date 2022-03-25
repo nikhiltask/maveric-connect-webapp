@@ -121,7 +121,7 @@ const SignupPage = () => {
             />
             <br />
             <p>
-              Already a member ? Login
+              Already a member ?
               <Link className="navbar-brand" to="/">
               Login
               </Link>

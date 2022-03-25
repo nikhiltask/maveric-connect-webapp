@@ -1,15 +1,15 @@
-import SignupPage from "../../Pages/Signup";
+import PostPage from "../../Pages/PostPage";
 import Footer from "../Footer";
 import Header from "../Header";
 
-const Signup = () => {
+const Post = () => {
     return ( 
         <>
         <Header />
-        <SignupPage />
+        <PostPage />
         <Footer />
         </>
      )
 }
  
-export default Signup;
+export default Post;
