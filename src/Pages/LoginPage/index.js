@@ -3,7 +3,6 @@ import axios from "axios";
 import Endpoints from "../api/EndPoints";
 import { Link } from "react-router-dom";
 
-
 const LoginPage = () => {
   const [responseMessage, setResponseMessaage] = useState({
     message: "",
@@ -21,19 +20,19 @@ const LoginPage = () => {
       .post(Endpoints.LOGIN_URL, user)
       .then(
         (response) => {
-          localStorage.setItem('token', response.data.token)
-          localStorage.setItem('user',JSON.stringify(response.data.user))
+          localStorage.setItem("token", response.data.token);
+          localStorage.setItem("user", JSON.stringify(response.data.user));
 
           console.log(response.data);
           setResponseMessaage({
-            message: 'login successfull',
-            cssClass: 'alert-success'
+            message: "login successfull",
+            cssClass: "alert-success",
           });
         },
         (error) => {
           setResponseMessaage({
             message: error.response.data.message,
-            cssClass: 'alert-danger'
+            cssClass: "alert-danger",
           });
         }
       )
@@ -55,14 +54,13 @@ const LoginPage = () => {
           <h2>Login</h2>
           <hr />
 
-         {responseMessage.message && (
-              <div class="alert alert-success" role="alert">
-              { responseMessage.message }
+          {responseMessage.message && (
+            <div class="alert alert-success" role="alert">
+              {responseMessage.message}
             </div>
-         )}
+          )}
 
           <form onSubmit={onSubmitHandler}>
-           
             <div className="form-group">
               <label htmlFor="">Email</label>
               <input
@@ -73,7 +71,7 @@ const LoginPage = () => {
                 className="form-control"
               />
             </div>
-          
+
             <div className="form-group">
               <label htmlFor="">Password</label>
               <input
@@ -91,12 +89,11 @@ const LoginPage = () => {
             />
             <br />
             <p>
-            {/* <Link className="nav-link" to="/login"/> */}
-              <a href="#">
-                New to Maveric Book ? Signup
-                </a>
-              
-              <a href="#">    Forgot password?</a>
+              New to Maveric Book ?
+              <Link className="navbar-brand" to="/signup">
+                Signup
+              </Link>
+              <a href="#"> Forgot password?</a>
             </p>
           </form>
         </div>

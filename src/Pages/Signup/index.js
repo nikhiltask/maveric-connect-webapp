@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Endpoints from "../api/EndPoints";
+import { Link } from "react-router-dom";
 
 const SignupPage = () => {
   const [responseMessage, setResponseMessaage] = useState({
@@ -120,7 +121,10 @@ const SignupPage = () => {
             />
             <br />
             <p>
-              <a href="#">Already a member ? Login</a>
+              Already a member ? Login
+              <Link className="navbar-brand" to="/">
+              Login
+              </Link>
             </p>
           </form>
         </div>
