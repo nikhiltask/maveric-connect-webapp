@@ -2,10 +2,12 @@ import React from "react";
 
 const PostPage = () => {
   return (
-    <div class="container" style={{border:"2px solid blue"}}>
+    <div class="container">
       <br></br>
       <br></br>
-      <div class="row">
+      <h3 class="mt-0 mb-1"  style={{ color: 'black' }}>Post Name</h3>
+      <br></br>
+      <div class="row" style={{border:"2px solid blue"}}>
         <div class="col"  >
           <img
             class="mr-3"
@@ -34,8 +36,8 @@ const PostPage = () => {
         </div>
       </div>
       <br></br>
-      <div class="row">
-        <div class="col" style={{border:"1px solid secondary"}}>
+      <div class="row" style={{border:"2px solid blue"}}>
+        <div class="col" >
           <img
             class="mr-3"
             src="user.png"
@@ -61,7 +63,7 @@ const PostPage = () => {
         </div>
       </div>
       <br></br>
-      <div class="row" style={{border:"1px solid secondary"}}>
+      <div class="row" style={{border:"2px solid blue"}}>
         <div class="col" >
           <img
             class="mr-3"
@@ -91,6 +93,7 @@ const PostPage = () => {
           <div class="col-4 col-sm-6">5 Likes</div>
         </div> */}
       </div>
+      <br></br>
     </div>
   );
 };

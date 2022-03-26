@@ -84,9 +84,11 @@ const LoginPage = () => {
             </div>
             <input
               type="submit"
-              value="Register"
+              value="Login" 
               className="btn btn-primary btn-block"
+              onClick="/PostDetails"
             />
+           
             <br />
             <p>
               New to Maveric Book ?
