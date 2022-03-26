@@ -8,18 +8,18 @@ import PostDetail from './Components/PostDetails/PostDetails';
 
 function App() {
   return (
-    <PostComponent/>
-    // <Router>
+    // <PostComponent/>
+    <Router>
     
-    //   <Routes>
-    //     <Route path="/" element={ <Homepage /> } />
-    //     <Route path="/signup" element={ <Signup /> } />
-    //     <Route path="/Post" element={ <Post /> } />
-    //     <Route path="/Postlike" element={ <PostComponent /> } />
-    //     <Route path="/PostDetails" element={ <PostDetail /> } />
+      <Routes>
+        <Route path="/" element={ <Homepage /> } />
+        <Route path="/signup" element={ <Signup /> } />
+        <Route path="/Post" element={ <Post /> } />
+        <Route path="/Postlike" element={ <PostComponent /> } />
+        <Route path="/PostDetails" element={ <PostDetail /> } />
         
-    //   </Routes>
-    // </Router>
+      </Routes>
+    </Router>
   );
 }
 
